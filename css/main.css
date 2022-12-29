@@ -43,13 +43,8 @@ body {
   padding-bottom: 300px;
 }
 
-.mapa {
-  background: url(../img/mapa.png);
-  width: 100%;
+.mapa{
   height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   margin-top: 45px;
   margin-left: 35px;
 }
