@@ -1,0 +1,385 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*===================MENU==========================*/
+
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+ .navbar-expand-lg{
+    background-color: #a67171 !important;
+ }
+
+ #menu a{
+     color:#950b0b!important; 
+     &:hover{
+        color: #1b2a4e!important;
+        
+     }  
+ }
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height:39rem !important;
+}
+/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local {
+    margin-top: 20px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+.mapa {
+    background: url(../img/mapa.png);
+    width:100%;
+    height:500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 45px;
+    margin-left: 35px;
+}
+.wrapper-local {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+/*===========================SECCION EQUIPO MIAMI==================================*/
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;   
+    text-align:left;
+    height:48px;
+}
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+  }
+#numeros-local p{
+    margin:0;
+}
+/*=========================CONTACTOS BACKGROUND================================*/
+
+#bg-contactos{
+    position:relative;
+    top: 130px;
+} 
+ #seccion-contacto{
+    background-color: #1b2a4e;
+    min-height:680px;
+    position:relative;
+}
+/*=========================CONTACTOS FORMULARIO================================*/
+#contenedor-formulario{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;  
+}
+#titulo-formulario {
+    color: #3f3f3f;
+}
+/*=========================FOOTER================================*/
+
+footer {
+    background: #1b2a4e;
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90%;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem ;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% ;
+    }
+    #servicios-fila-1 {
+        width:100% ;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap ;
+        justify-content: center ;
+        text-align: center;
+    }
+}
+
+@media (max-width: 769px){
+    #pat{
+        display: none;
+    }
+}
+
+.navbar-expand-lg{
+   background: #dacfcf;
+}
+
+.nav-link:hover{
+   color: rgb(48, 116, 40);
+}
+
+// NOTICIAS EMPIEZA ACA
+
+$primary-color: #053a55;
+$color-verde:  green;
+$fondo_color: rgb(212, 206, 206);
+   
+  body{
+    background-color: $fondo_color;
+  }
+ .caja{
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-top: 15px;
+    
+    .grid{
+        display: flex;
+        
+    }
+    .grid__1{
+        padding-left: 30px;
+        flex-basis: 550px;
+    }
+    .grid__2{
+        flex-basis: 400px;
+        
+    }
+    h2{
+        color: $primary-color;
+        font-size: 2rem;
+        max-width: 500px;
+        padding: 5px 0px;
+    }
+    p{
+        font-size: 21px;
+        max-width: 450px;
+    }
+    img{
+        border-radius: 10px;
+        background-image: cover;
+        
+    }
+    .img__1{
+        width: 90%;
+    }
+    .img__2{
+        width: 100%;
+    }
+    .data{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+ }
+ .article{
+    ul {
+        list-style: none;
+        line-height: 1.6;
+        margin: 0;
+    }
+    li{
+        position: relative;
+        border-top: 1px solid #efefef;
+        padding-top: 20px;
+        padding-left: 25px;
+        margin-bottom: 0;
+        &::before{
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: #0385c4;
+            position: absolute;
+            left: 5px;
+            top: 28px;
+           }
+        }
+    }
+    h3{
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+ 
+    a{
+        text-decoration: none;
+        
+    }
+ @media(max-width:768px){
+    .caja{
+        display: flex!important;
+        p,
+        h2{
+            max-width: none;
+            height: 50%;
+        }
+        p{
+            font-size: 28px;
+        }
+    }
+    .grid{
+        display: block!important;
+        text-align: center;
+    }
+   .grid__1{
+    width: 90%;  
+   }
+   .grid__2{
+    width: 90%;
+    padding-left: 10%!important;
+   }
+ }
+ 
+ .mover__lugar{
+    font-size: 18px!important;
+    color: rgb(80, 64, 64);
+    padding-left: 22px;
+    padding-bottom: 20px;
+    
+    &:hover{
+        color: rgb(66, 15, 177)!important;
+        
+    }
+ }
+ .img__cambio{
+    border-radius: 12px; 
+ }
+ p{
+    font-size: 25px;
+    color: $primary-color!important;
+ }
+ footer{
+    color: #efefef!important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 70px!important;
+ }
+
+//  Funcion 
+
+ .container{
+    .color__c{
+        color: $color-verde;
+    }
+    .img__4{
+        width: 50%;
+        padding: 10px 0px; 
+        
+    }
+    .img__3{
+        width: 50%;
+        padding: 20px 0px; 
+        border-radius: 20%; 
+    }
+ .CC_centrar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: $color-verde;
+ }
+ .parra__fo{
+   width: 95%;
+ }
+ .author{
+    font-size: 20px;
+ }
+}
+@media(max-width:768px){
+    .img__3{
+        width: 50%;
+        
+    }
+    .parra__fo{
+        width: auto;
+    }
+    .achicar{
+        width: auto;
+    }
+}
+
+//  DISCULPE POR EL DESASTRE SI PUSE VARIOS MEDIA 768
+//   TENIA ALGUNOS PROBLEMAS Y AYER ME QUEDE TODO EL DIA 
+//   HACIENDO EL PROYECTO Y NO LO PUDE ACABAR A TIEMPO , DISCULPE 
