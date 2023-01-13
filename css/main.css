@@ -43,14 +43,15 @@ body {
   padding-bottom: 300px;
 }
 
-.mapa{
-  height: 500px;
+.mapa {
+  width: 50%;
+  height: 380px;
   margin-top: 45px;
   margin-left: 35px;
 }
 
 .wrapper-local {
-  width: 50%;
+  width: 80%;
   margin-left: 100px;
   padding-top: 150px;
 }
@@ -129,11 +130,11 @@ footer p {
     margin: auto;
   }
   #local {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     padding-top: 30px;
   }
   .wrapper-local {
-    width: 90%;
+    width: 70%;
     margin: auto;
     padding-top: 50px;
   }
@@ -142,7 +143,7 @@ footer p {
 /*=========================MEDIA QUERIES PANTALLA SM================================*/
 @media (max-width: 768px) {
   #intro, #equipo {
-    width: 90%;
+    width: 70%;
     margin: auto;
   }
   #img-equipo {
@@ -152,14 +153,10 @@ footer p {
   .wrapper-local {
     width: 90%;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 80px;
   }
   #local {
     flex-wrap: wrap;
-  }
-  .mapa img {
-    width: 100%;
-    height: auto;
   }
   #bg-contactos {
     top: -120px;
@@ -259,8 +256,8 @@ body {
 .article li {
   position: relative;
   border-top: 1px solid #efefef;
-  padding-top: 20px;
-  padding-left: 25px;
+  padding-top: 15px;
+  padding-left: 13px;
   margin-bottom: 0;
 }
 
@@ -310,18 +307,15 @@ a {
 }
 
 .mover__lugar {
-  font-size: 18px !important;
-  color: #504040;
+  font-size: 20px;
   padding-left: 22px;
-  padding-bottom: 20px;
-}
-
-.mover__lugar:hover {
-  color: #420fb1 !important;
+  color: #113a99;
 }
 
 .img__cambio {
   border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 p {
@@ -377,4 +371,20 @@ footer {
   .achicar {
     width: auto;
   }
+  .mapa {
+    width: 100%;
+  }
+}
+
+/* algunos cambios */
+.mt-4 {
+  margin-top: 0rem !important;
+}
+
+.map__centrar {
+  justify-content: center !important;
+}
+
+.bor__des {
+  border: 2px solid #827b19;
 }
